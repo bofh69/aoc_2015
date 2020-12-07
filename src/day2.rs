@@ -12,7 +12,7 @@ pub fn input_generator(input: &str) -> Vec<Data> {
     input
         .lines()
         .map(|line| {
-            let mut iter = line.split("x").map(|s| s.parse().unwrap());
+            let mut iter = line.split('x').map(|s| s.parse().unwrap());
             Data {
                 l: iter.next().unwrap(),
                 w: iter.next().unwrap(),
